@@ -1,0 +1,4 @@
+--color
+--pattern spec/**/*_spec.rb
+--require spec_helper
+--warnings
