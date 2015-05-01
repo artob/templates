@@ -8,12 +8,11 @@ rvm:
   - 2.2
   - 2.1
   - 2.0
-  - 1.9.3
-  - jruby
+  - jruby-head
   - rbx-2
 cache: bundler
 matrix:
   fast_finish: true
   allow_failures:
-    - rvm: jruby
+    - rvm: jruby-head
     - rvm: rbx-2

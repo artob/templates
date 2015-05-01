@@ -1,6 +1,6 @@
 module Foobar
   module VERSION
-    FILE = File.expand_path('../../../VERSION', __FILE__).freeze
+    FILE = File.expand_path('../../VERSION', __dir__).freeze
     STRING = File.read(FILE).chomp.freeze
     MAJOR, MINOR, TINY, EXTRA = STRING.split('.').map(&:to_i).freeze
 

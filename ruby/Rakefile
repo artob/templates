@@ -7,7 +7,7 @@ require 'yard/rake/yardoc_task'
 
 GEMSPEC = Gem::Specification.load(Dir.glob('*.gemspec').first)
 
-$:.unshift(File.expand_path('lib', File.dirname(__FILE__)))
+$:.unshift(File.expand_path('lib', __dir__))
 require GEMSPEC.name
 
 RSpec::Core::RakeTask.new do |t|
