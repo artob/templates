@@ -2,6 +2,7 @@
 .tmp/
 pkg/
 tmp/
+README.html
 *~
 
 # GNU Autotools

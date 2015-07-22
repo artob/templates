@@ -2,6 +2,7 @@
 .bundle
 .yardoc
 Gemfile.lock
+README.html
 pkg
 tmp
 *~
