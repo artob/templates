@@ -1,2 +1,2 @@
 - Unify README file conventions for Ruby projects.
-- *.gemspec: gem.add_development_dependency 'rake'
+- Makefile: standard rules for making README, at least.
