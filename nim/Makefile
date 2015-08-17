@@ -1,13 +1,13 @@
 all: build
 
 build:
-	# TODO
+	nimble build
 
 check:
 	# TODO
 
 install: build
-	# TODO
+	nimble install
 
 clean:
 	rm -f *~
