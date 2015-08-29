@@ -1,2 +1,23 @@
+General
+=======
+
+- All templates should probably have CHANGES file placeholders.
+- All templates should have a rule for generating README.html.
+
+Ruby
+====
+
 - Unify README file conventions for Ruby projects.
 - Makefile: standard rules for making README, at least.
+
+OCaml
+=====
+
+- Fix the ``make install`` target for correct prefix/DESTDIR support.
+- Implement the ``make check`` target: how to test OCaml packages?
+- Figure out what should go into .ocp-indent.
+- Improve on DRY aspects for META.in, Makefile, foobar.install; ideally,
+  there should be a way to obtain metadata fields from foobar.opam for use
+  in generating the other files. Don't hardcode $PACKAGE_NAME in Makefile.
+- Improve the ``make clean`` target.
+- Figure out if it's possible to not hardcode "version" in foobar.opam.
