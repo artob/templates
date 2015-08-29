@@ -1,0 +1,14 @@
+lib: [
+  "META"
+  "src/foobar.mli" {"foobar.mli"}
+  "_build/src/foobar.cma" {"foobar.cma"}
+  "_build/src/foobar.cmxa" {"foobar.cmxa"}
+]
+doc: [
+  "AUTHORS"
+  "CHANGES"
+  "CREDITS"
+  "README"
+  "UNLICENSE"
+  "VERSION"
+]
