@@ -2,6 +2,10 @@
 Arto's Project Templates
 ************************
 
+These are my coding project templates for the `programming languages
+<http://ar.to/notes/programming>`__ I most frequently work with and publish
+open-source projects in.
+
 C++ (Autotools)
 ===============
 
@@ -9,6 +13,11 @@ TODO
 
 C++ (Header-only)
 =================
+
+TODO
+
+Common Lisp
+===========
 
 TODO
 
@@ -64,6 +73,11 @@ Python
 TODO
 
 Ruby
+====
+
+TODO
+
+Rust
 ====
 
 TODO
