@@ -21,3 +21,5 @@ OCaml
   in generating the other files. Don't hardcode $PACKAGE_NAME in Makefile.
 - Improve the ``make clean`` target.
 - Figure out if it's possible to not hardcode "version" in foobar.opam.
+- https://mmottl.github.io/ocaml-makefile/
+- .cmi (compiled interface file)
