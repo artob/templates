@@ -1,6 +1,7 @@
 lib: [
   "META"
   "src/foobar.mli" {"foobar.mli"}
+  "_build/src/foobar.cmi" {"foobar.cmi"}
   "_build/src/foobar.cma" {"foobar.cma"}
   "_build/src/foobar.cmxa" {"foobar.cmxa"}
 ]
