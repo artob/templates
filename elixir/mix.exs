@@ -21,7 +21,14 @@ defmodule Foobar.Mixfile do
      aliases: aliases(),
      deps: deps(),
      package: package(),
-     docs: [source_ref: @version, main: "readme", extras: ["README.md"]]]
+     docs: [source_ref: @version, main: "readme", extras: ["README.md"]],
+     test_coverage: [tool: ExCoveralls],
+     preferred_cli_env: [
+       "coveralls": :test,
+       "coveralls.detail": :test,
+       "coveralls.post": :test,
+       "coveralls.html": :test,
+     ]]
   end
 
   def application do

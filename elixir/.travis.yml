@@ -8,4 +8,4 @@ elixir:
 otp_release:
   - 19.0
 script:
-  - "MIX_ENV=test mix do deps.get, compile, test"
+  - "MIX_ENV=test mix do deps.get, compile, coveralls.travis"
