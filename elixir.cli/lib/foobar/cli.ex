@@ -23,8 +23,25 @@ defmodule Foobar.CLI do
     ],
   ]
 
+  @ex_ok          0  # successful termination
+  @ex_usage       64 # command line usage error
+  @ex_dataerr     65 # data format error
+  @ex_noinput     66 # cannot open input
+  @ex_nouser      67 # addressee unknown
+  @ex_nohost      68 # host name unknown
+  @ex_unavailable 69 # service unavailable
+  @ex_software    70 # internal software error
+  @ex_oserr       71 # system error (e.g., can't fork)
+  @ex_osfile      72 # critical OS file missing
+  @ex_cantcreat   73 # can't create (user) output file
+  @ex_ioerr       74 # input/output error
+  @ex_tempfail    75 # temp failure; user is invited to retry
+  @ex_protocol    76 # remote error in protocol
+  @ex_noperm      77 # permission denied
+  @ex_config      78 # configuration error
+
   def main(argv \\ []) do
-    argv |> parse_args |> process
+    argv |> parse_args |> process |> System.halt
   end
 
   defp parse_args(argv) do
@@ -34,29 +51,35 @@ defmodule Foobar.CLI do
 
   defp process({_, _, ufos}) when length(ufos) > 0 do
     IO.puts :stderr, "#{@app}: Unknown options: #{inspect ufos}"
+    @ex_usage
   end
 
   defp process({[], [], []}) do
     IO.puts :stderr, "#{@app}: No options given."
     IO.puts :stderr, "#{@app}: No arguments given."
+    @ex_usage
   end
 
   defp process({%{version: true}, _, _}) do
     IO.puts "#{@name} #{@version}"
+    @ex_ok
   end
 
   defp process({%{help: true}, _, _}) do
     help
+    @ex_ok
   end
 
   defp process({opts, [], []}) do
     IO.puts "Got options: #{inspect opts}"
     IO.puts :stderr, "#{@app}: No arguments given."
+    @ex_ok
   end
 
   defp process({opts, args, []}) do
     IO.puts "Got options: #{inspect opts}"
     IO.puts "Got arguments: #{inspect args}"
+    @ex_ok
   end
 
   defp help do
