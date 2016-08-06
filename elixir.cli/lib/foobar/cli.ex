@@ -1,6 +1,11 @@
 # This is free and unencumbered software released into the public domain.
 
 defmodule Foobar.CLI do
+  alias Foobar.Mixfile
+
+  @app     Keyword.fetch!(Mixfile.project, :app)
+  @name    Keyword.fetch!(Mixfile.project, :name)
+  @version Keyword.fetch!(Mixfile.project, :version)
   @options [
     strict: [
       version: :boolean,
@@ -23,25 +28,39 @@ defmodule Foobar.CLI do
   end
 
   defp parse_args(argv) do
-    {_opts, _args, _ufos} = OptionParser.parse(argv, @options)
+    {opts, args, ufos} = OptionParser.parse(argv, @options)
+    {Enum.into(opts, %{}), args, ufos}
   end
 
   defp process({_, _, ufos}) when length(ufos) > 0 do
-    IO.puts :stderr, "Invalid options: #{inspect ufos}"
+    IO.puts :stderr, "#{@app}: Unknown options: #{inspect ufos}"
   end
 
   defp process({[], [], []}) do
-    IO.puts :stderr, "No options given."
-    IO.puts :stderr, "No arguments given."
+    IO.puts :stderr, "#{@app}: No options given."
+    IO.puts :stderr, "#{@app}: No arguments given."
+  end
+
+  defp process({%{version: true}, _, _}) do
+    IO.puts "#{@name} #{@version}"
+  end
+
+  defp process({%{help: true}, _, _}) do
+    help
   end
 
   defp process({opts, [], []}) do
     IO.puts "Got options: #{inspect opts}"
-    IO.puts :stderr, "No arguments given."
+    IO.puts :stderr, "#{@app}: No arguments given."
   end
 
   defp process({opts, args, []}) do
     IO.puts "Got options: #{inspect opts}"
     IO.puts "Got arguments: #{inspect args}"
+  end
+
+  defp help do
+    IO.puts "Usage: #{@app} [-Vhqvd] [arguments...]"
+    IO.puts ""
   end
 end
