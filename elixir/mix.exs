@@ -37,7 +37,7 @@ defmodule Foobar.Mixfile do
   end
 
   defp package do
-    [files: ~w(lib priv src mix.exs CHANGES README.md UNLICENSE VERSION),
+    [files: ~w(lib priv src mix.exs CHANGES.md README.md UNLICENSE VERSION),
      maintainers: ["Arto Bendiken"],
      licenses: ["Public Domain"],
      links: %{"GitHub" => @github, "Bitbucket" => @bitbucket}]
