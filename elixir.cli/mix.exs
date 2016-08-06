@@ -12,6 +12,7 @@ defmodule Foobar.Mixfile do
      version: @version,
      elixir: "~> 1.3",
      compilers: Mix.compilers,
+     escript: escript(),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      name: @name,
@@ -36,6 +37,10 @@ defmodule Foobar.Mixfile do
      applications: [:logger]]
   end
 
+  defp escript do
+    [main_module: Foobar.CLI]
+  end
+
   defp package do
     [files: ~w(lib priv src mix.exs CHANGES README.md UNLICENSE VERSION),
      maintainers: ["Arto Bendiken"],
@@ -45,7 +50,7 @@ defmodule Foobar.Mixfile do
 
   defp description do
     """
-    Foobar is a template for Elixir projects.
+    Foobar is a template for Elixir CLI projects.
     """
   end
 
