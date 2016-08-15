@@ -15,7 +15,8 @@ Examples
 ...
 ```
 
-## Installation
+Installation
+------------
 
 Add `foobar` to your list of dependencies in your project's `mix.exs` file:
 
