@@ -4,6 +4,12 @@ General
 - All templates should probably have CHANGES file placeholders.
 - All templates should have a rule for generating README.html.
 
+Arduino
+=======
+- https://docs.travis-ci.com/user/integration/platformio/
+- https://learn.adafruit.com/continuous-integration-arduino-and-you/testing-your-project
+- https://github.com/adafruit/travis-ci-arduino
+
 Ruby
 ====
 
