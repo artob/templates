@@ -6,3 +6,5 @@ repositories {
 
 dependencies {
 }
+
+sourceCompatibility = 1.8
