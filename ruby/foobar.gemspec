@@ -24,11 +24,11 @@ Gem::Specification.new do |gem|
   gem.test_files         = %w()
   gem.has_rdoc           = false
 
-  gem.required_ruby_version      = '>= 2.0'
-  gem.required_rubygems_version  = '>= 2.0'
+  gem.required_ruby_version      = '>= 2.2'
+  gem.required_rubygems_version  = '>= 2.4.5'         # Ruby 2.2.0
   gem.requirements               = []
-  gem.add_development_dependency 'rake',  '>= 10.4'
-  gem.add_development_dependency 'rspec', '>= 3.3'
-  gem.add_development_dependency 'yard' , '>= 0.8.7.6'
+  gem.add_development_dependency 'rake',  '>= 10.4.2' # Ruby 2.2.0
+  gem.add_development_dependency 'rspec', '>= 3.6'
+  gem.add_development_dependency 'yard' , '>= 0.9'
   gem.post_install_message       = nil
 end
