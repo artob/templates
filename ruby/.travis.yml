@@ -1,7 +1,7 @@
 # http://docs.travis-ci.com/user/languages/ruby/
 language: ruby
 bundler_args: --without debug
-script: rake spec
+script: bundle exec rake spec
 env:
   - CI=true
 rvm:
