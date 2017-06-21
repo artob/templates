@@ -10,7 +10,7 @@ defmodule Foobar.Mixfile do
   def project do
     [app: :foobar,
      version: @version,
-     elixir: "~> 1.3",
+     elixir: "~> 1.4",
      compilers: Mix.compilers,
      escript: escript(),
      build_embedded: Mix.env == :prod,
@@ -34,7 +34,7 @@ defmodule Foobar.Mixfile do
 
   def application do
     [#mod: {Foobar, []},
-     applications: [:logger]]
+     extra_applications: [:logger]]
   end
 
   defp escript do
