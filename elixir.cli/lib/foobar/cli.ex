@@ -66,7 +66,7 @@ defmodule Foobar.CLI do
   end
 
   defp process({%{help: true}, _, _}) do
-    help
+    help()
     @ex_ok
   end
 
