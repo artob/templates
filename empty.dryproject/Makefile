@@ -1,4 +1,4 @@
-PANDOC = pandoc
+PANDOC ?= pandoc
 
 PACKAGE :=
 VERSION := $(shell cat VERSION)
