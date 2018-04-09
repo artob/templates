@@ -1,5 +1,5 @@
-PANDOC ?= pandoc
 DUNE   ?= jbuilder
+PANDOC ?= pandoc
 
 PACKAGE :=
 VERSION := $(shell cat VERSION)
