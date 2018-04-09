@@ -6,15 +6,18 @@ VERSION := $(shell cat VERSION)
 
 SOURCES :=
 
-TARGETS := _build/bin/hello.exe
+TARGETS := bin/hello
 
 %.html: %.rst
 	$(PANDOC) -o $@ -t html5 -s $<
 
+all: build
+
 _build/default/bin/hello.exe:
 	$(DUNE) build bin/hello.exe
 
-all: build
+bin/hello: _build/default/bin/hello.exe
+	ln $< $@
 
 build: $(TARGETS)
 
