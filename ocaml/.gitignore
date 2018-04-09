@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Editor backup files
+*~
+
+# rst2html outputs
+*.html
+
+# Dune artifacts
+.merlin
+_build/
