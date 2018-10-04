@@ -1,10 +1,16 @@
+# macOS
 .DS_Store
+
+# Editor backup files
+*~
+
+# rst2html outputs
+*.html
+
+# Ruby artifacts
 .bundle
 .yardoc
 Gemfile.lock
-README.html
 pkg
 tmp
-vendor
-*~
 *.gem
