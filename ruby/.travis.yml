@@ -1,11 +1,12 @@
-# http://docs.travis-ci.com/user/languages/ruby/
+# https://docs.travis-ci.com/user/languages/ruby/
 language: ruby
+sudo: false
 bundler_args: --without debug
 script: bundle exec rake spec
 env:
   - CI=true
 rvm:
-  - 2.2
+  - 2.5
   - jruby-head
 cache: bundler
 matrix:
