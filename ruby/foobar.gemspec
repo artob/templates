@@ -15,13 +15,12 @@ Gem::Specification.new do |gem|
   gem.email              = 'arto@bendiken.net'
 
   gem.platform           = Gem::Platform::RUBY
-  gem.files              = %w(AUTHORS CREDITS README UNLICENSE VERSION) + Dir.glob('lib/**/*.rb')
+  gem.files              = %w(AUTHORS CREDITS.rst README.md UNLICENSE VERSION) + Dir.glob('lib/**/*.rb')
   gem.bindir             = %q(bin)
   gem.executables        = %w()
   gem.require_paths      = %w(lib)
   gem.extensions         = %w()
   gem.test_files         = %w()
-  gem.has_rdoc           = false
 
   gem.required_ruby_version      = '>= 2.5.1'         # Ubuntu 18.04 LTS
   gem.required_rubygems_version  = '>= 2.7.6'         # Ruby 2.5.1
