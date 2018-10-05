@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
 
   gem.name               = 'foobar'
   gem.homepage           = 'https://github.com/bendiken/foobar'
-  gem.license            = 'Public Domain' if gem.respond_to?(:license=)
+  gem.license            = 'Unlicense'
   gem.summary            = 'TODO: Gem summary goes here.'
   gem.description        = 'TODO: Gem description goes here.'
 
