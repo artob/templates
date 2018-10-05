@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.email              = 'arto@bendiken.net'
 
   gem.platform           = Gem::Platform::RUBY
-  gem.files              = %w(AUTHORS CREDITS.rst README.md UNLICENSE VERSION) + Dir.glob('lib/**/*.rb')
+  gem.files              = %w(AUTHORS CREDITS.rst README UNLICENSE VERSION) + Dir.glob('lib/**/*.rb')
   gem.bindir             = %q(bin)
   gem.executables        = %w()
   gem.require_paths      = %w(lib)
