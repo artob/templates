@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 gemspec
 
+# https://rubygems.org/gems/drylib
+gem 'drylib'
+
 group :development do
   gem 'rake'
   gem 'redcarpet'

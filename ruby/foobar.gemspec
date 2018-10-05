@@ -19,7 +19,7 @@ Gem::Specification.new do |gem|
     'changelog_uri'     => 'https://github.com/bendiken/foobar/blob/master/CHANGES.rst',
     'documentation_uri' => 'https://www.rubydoc.info/github/bendiken/foobar/master',
     'homepage_uri'      => gem.homepage,
-    'mailing_list_uri'  => nil,
+    #'mailing_list_uri'  => '',
     'source_code_uri'   => 'https://github.com/bendiken/foobar',
     'wiki_uri'          => 'https://github.com/bendiken/foobar/wiki',
   }
@@ -32,11 +32,12 @@ Gem::Specification.new do |gem|
   gem.extensions         = %w()
   gem.test_files         = %w()
 
-  gem.required_ruby_version      = '>= 2.5.1'         # Ubuntu 18.04 LTS
-  gem.required_rubygems_version  = '>= 2.7.6'         # Ruby 2.5.1
+  gem.required_ruby_version      = '>= 2.5.1'          # Ubuntu 18.04 LTS
+  gem.required_rubygems_version  = '>= 2.7.6'          # Ruby 2.5.1
   gem.requirements               = []
-  gem.add_development_dependency 'rake',  '>= 12.3.1' # Ruby 2.5.1
-  gem.add_development_dependency 'rspec', '>= 3.8'
-  gem.add_development_dependency 'yard' , '>= 0.9'
+  gem.add_development_dependency 'rake',   '>= 12.3.1' # Ruby 2.5.1
+  gem.add_development_dependency 'rspec',  '>= 3.8'
+  gem.add_development_dependency 'yard' ,  '>= 0.9'
+  gem.add_runtime_dependency     'drylib'
   gem.post_install_message       = nil
 end
