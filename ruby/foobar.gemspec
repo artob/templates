@@ -14,6 +14,16 @@ Gem::Specification.new do |gem|
   gem.author             = 'Arto Bendiken'
   gem.email              = 'arto@bendiken.net'
 
+  gem.metadata = {
+    'bug_tracker_uri'   => 'https://github.com/bendiken/foobar/issues',
+    'changelog_uri'     => 'https://github.com/bendiken/foobar/blob/master/CHANGES.rst',
+    'documentation_uri' => 'https://www.rubydoc.info/github/bendiken/foobar/master',
+    'homepage_uri'      => gem.homepage,
+    'mailing_list_uri'  => nil,
+    'source_code_uri'   => 'https://github.com/bendiken/foobar',
+    'wiki_uri'          => 'https://github.com/bendiken/foobar/wiki',
+  }
+
   gem.platform           = Gem::Platform::RUBY
   gem.files              = %w(AUTHORS CREDITS.rst README UNLICENSE VERSION) + Dir.glob('lib/**/*.rb')
   gem.bindir             = %q(bin)
