@@ -29,7 +29,7 @@ check: $(SOURCES) $(wildcard test/test*.py)
 	PYTHONPATH=src $(PYTEST)
 
 dist:  sdist bdist
-sdist: dist/$(PACKAGE)-$(VERSION).tar.xz
+sdist: dist/$(PACKAGE)-$(VERSION).tar.gz
 bdist: dist/$(PACKAGE)-$(VERSION)-py3-none-any.whl
 
 install: setup.py $(SOURCES)
