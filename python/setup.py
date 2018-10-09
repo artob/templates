@@ -45,7 +45,9 @@ setup(
   project_urls={},
   packages=find_packages(where='src'),
   package_dir={'': 'src'},
-  install_requires=[],
+  install_requires=[
+    'drylib',
+  ],
   python_requires='~=3.5',
   extras_require={
     'test': ['pytest'],
