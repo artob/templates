@@ -5,12 +5,13 @@
 *~
 
 # Python object files
+__pycache__/
 *.pyc
 *.pyo
 
 # Python distutils
-build
+build/
 
 # Python setuptools
+dist/
 *.egg-info/
-dist
