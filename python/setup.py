@@ -42,7 +42,9 @@ setup(
     'Topic :: Software Development :: Libraries',
   ],
   keywords='',
-  project_urls={},
+  project_urls={
+    'Source': 'https://github.com/bendiken/foobar',
+  },
   packages=find_packages(where='src'),
   package_dir={'': 'src'},
   install_requires=[
