@@ -4,10 +4,12 @@
 # Editor backup files
 *~
 
+# rst2html outputs
+*.html
+
 # Python object files
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
 
 # Python distutils
 build/
@@ -15,3 +17,9 @@ build/
 # Python setuptools
 dist/
 *.egg-info/
+
+# pytest artifacts
+.pytest_cache/
+
+# tox artifacts
+.tox/

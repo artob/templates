@@ -1,0 +1,6 @@
+include AUTHORS
+include CHANGES.rst
+include CREDITS.rst
+include README.rst
+include UNLICENSE
+include VERSION
