@@ -3,7 +3,7 @@ Arto's Project Templates
 ************************
 
 These are my coding project templates for the `programming languages
-<http://ar.to/notes/programming>`__ I most frequently work with and publish
+<https://ar.to/notes/programming>`__ I most frequently work with and publish
 open-source projects in.
 
 C++ (Autotools)
