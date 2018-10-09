@@ -4,5 +4,13 @@
 # Editor backup files
 *~
 
-# rst2html outputs
-*.html
+# Python object files
+*.pyc
+*.pyo
+
+# Python distutils
+build
+
+# Python setuptools
+*.egg-info/
+dist
