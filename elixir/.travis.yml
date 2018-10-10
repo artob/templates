@@ -1,11 +1,9 @@
-# See: https://travis-ci.org/bendiken/foobar
-
-sudo: false
-
+# See: https://docs.travis-ci.com/user/languages/elixir/
 language: elixir
+sudo: false
 elixir:
-  - 1.3.2
+  - 1.7.3
 otp_release:
-  - 19.0
+  - 21.1
 script:
   - MIX_ENV=test mix do deps.get, compile, coveralls.travis
