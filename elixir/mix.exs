@@ -1,8 +1,8 @@
-defmodule Foobar.Mixfile do
+defmodule Foobar.MixProject do
   use Mix.Project
 
   @name "Foobar"
-  @version File.read!("VERSION") |> String.strip()
+  @version File.read!("VERSION") |> String.trim()
   @github "https://github.com/bendiken/foobar"
   @bitbucket "https://bitbucket.org/bendiken/foobar"
   @homepage @github
@@ -11,31 +11,32 @@ defmodule Foobar.Mixfile do
     [
       app: :foobar,
       version: @version,
-      elixir: "~> 1.4",
-      compilers: Mix.compilers(),
-      build_embedded: Mix.env() == :prod,
+      elixir: "~> 1.7",
+      #compilers: Mix.compilers(),
+      #build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
-      name: @name,
-      source_url: @github,
-      homepage_url: @homepage,
-      description: description(),
-      aliases: aliases(),
+      #name: @name,
+      #source_url: @github,
+      #homepage_url: @homepage,
+      #description: description(),
+      #aliases: aliases(),
       deps: deps(),
-      package: package(),
-      docs: [source_ref: @version, main: "readme", extras: ["README.md"]],
-      test_coverage: [tool: ExCoveralls],
-      preferred_cli_env: [
-        coveralls: :test,
-        "coveralls.detail": :test,
-        "coveralls.post": :test,
-        "coveralls.html": :test
-      ]
+      #package: package(),
+      #docs: [source_ref: @version, main: "readme", extras: ["README.md"]],
+      #test_coverage: [tool: ExCoveralls],
+      #preferred_cli_env: [
+      #  coveralls: :test,
+      #  "coveralls.detail": :test,
+      #  "coveralls.post": :test,
+      #  "coveralls.html": :test
+      #]
     ]
   end
 
   def application do
-    # mod: {Foobar, []},
-    [extra_applications: [:logger]]
+    [
+      extra_applications: [:logger]
+    ]
   end
 
   defp package do
