@@ -1,7 +1,7 @@
 Foobar
 ======
 
-[![Project license](https://img.shields.io/badge/license-Public%20Domain-blue.svg)](https://unlicense.org)
+[![Project license](https://img.shields.io/badge/license-Public Domain-blue.svg)](https://unlicense.org)
 [![Hex.pm package](https://img.shields.io/hexpm/v/foobar.svg)](https://hex.pm/packages/foobar)
 [![Hex.pm downloads](https://img.shields.io/hexpm/dt/foobar.svg)](https://hex.pm/packages/foobar)
 [![Travis CI build status](https://img.shields.io/travis/bendiken/foobar/master.svg)](https://travis-ci.org/bendiken/foobar)
