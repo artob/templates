@@ -55,12 +55,13 @@ defmodule Foobar.MixProject do
   end
 
   defp deps do
+    # See: https://hexdocs.pm/mix/Mix.Tasks.Deps.html
     [
-      {:credo, ">= 0.0.0", only: [:dev, :test]},
-      {:dialyxir, ">= 0.0.0", only: [:dev, :test]},
-      {:earmark, ">= 0.0.0", only: :dev},
-      {:ex_doc, ">= 0.0.0", only: :dev},
-      {:excoveralls, ">= 0.0.0", only: :test}
+      {:credo, "~> 0.10", only: [:dev, :test]},
+      {:dialyxir, "~> 0.5", only: [:dev, :test]},
+      {:earmark, "~> 1.2", only: :dev},
+      {:ex_doc, "~> 0.19", only: :dev},
+      {:excoveralls, "~> 0.10", only: :test},
     ]
   end
 
