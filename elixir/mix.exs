@@ -27,12 +27,15 @@ defmodule Foobar.MixProject do
       name: @name,
       source_url: @github,
       homepage_url: @homepage,
+      description: description(),
       docs: [
         source_ref: @version,
         main: "readme",
-        extras: ["README.md", "CHANGES.md"]
+        extras: [
+          "README.md": [title: @name],
+          "CHANGES.md": [title: "Changelog"]
+        ]
       ],
-      description: description(),
 
       # See: https://github.com/parroty/excoveralls
       test_coverage: [tool: ExCoveralls],
