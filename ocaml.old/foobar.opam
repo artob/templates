@@ -3,11 +3,11 @@ name: "foobar"
 version: "0.0.0"
 maintainer: "Arto Bendiken <arto@bendiken.net>"
 authors: "Arto Bendiken <arto@bendiken.net>"
-homepage: "https://bitbucket.org/bendiken/foobar.ml"
-bug-reports: "https://bitbucket.org/bendiken/foobar.ml/issues"
+homepage: "https://bitbucket.org/artob/foobar.ml"
+bug-reports: "https://bitbucket.org/artob/foobar.ml/issues"
 license: "Public Domain"
 tags: "org:bendiken"
-dev-repo: "https://bitbucket.org/bendiken/foobar.ml.git"
+dev-repo: "https://bitbucket.org/artob/foobar.ml.git"
 build: [make]
 remove: ["ocamlfind" "remove" "foobar"]
 depends: [

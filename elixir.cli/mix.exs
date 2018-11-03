@@ -3,8 +3,8 @@ defmodule Foobar.Mixfile do
 
   @name      "Foobar"
   @version   File.read!("VERSION") |> String.strip
-  @github    "https://github.com/bendiken/foobar"
-  @bitbucket "https://bitbucket.org/bendiken/foobar"
+  @github    "https://github.com/artob/foobar"
+  @bitbucket "https://bitbucket.org/artob/foobar"
   @homepage  @github
 
   def project do

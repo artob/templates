@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.date               = File.mtime('VERSION').strftime('%Y-%m-%d')
 
   gem.name               = 'foobar'
-  gem.homepage           = 'https://github.com/bendiken/foobar'
+  gem.homepage           = 'https://github.com/artob/foobar'
   gem.license            = 'Unlicense'
   gem.summary            = 'TODO: Gem summary goes here.'
   gem.description        = 'TODO: Gem description goes here.'
@@ -15,13 +15,13 @@ Gem::Specification.new do |gem|
   gem.email              = 'arto@bendiken.net'
 
   gem.metadata = {
-    'bug_tracker_uri'   => 'https://github.com/bendiken/foobar/issues',
-    'changelog_uri'     => 'https://github.com/bendiken/foobar/blob/master/CHANGES.rst',
-    'documentation_uri' => 'https://www.rubydoc.info/github/bendiken/foobar/master',
+    'bug_tracker_uri'   => 'https://github.com/artob/foobar/issues',
+    'changelog_uri'     => 'https://github.com/artob/foobar/blob/master/CHANGES.rst',
+    'documentation_uri' => 'https://www.rubydoc.info/github/artob/foobar/master',
     'homepage_uri'      => gem.homepage,
     #'mailing_list_uri'  => '',
-    'source_code_uri'   => 'https://github.com/bendiken/foobar',
-    'wiki_uri'          => 'https://github.com/bendiken/foobar/wiki',
+    'source_code_uri'   => 'https://github.com/artob/foobar',
+    'wiki_uri'          => 'https://github.com/artob/foobar/wiki',
   }
 
   gem.platform           = Gem::Platform::RUBY

@@ -23,7 +23,7 @@ setup(
   description="Foobar",
   long_description=LONG_DESCRIPTION,
   long_description_content_type='text/x-rst',
-  url='https://github.com/bendiken/foobar',
+  url='https://github.com/artob/foobar',
   author='Arto Bendiken',
   author_email='arto@bendiken.net',
   license='Public Domain',
@@ -43,7 +43,7 @@ setup(
   ],
   keywords='',
   project_urls={
-    'Source': 'https://github.com/bendiken/foobar',
+    'Source': 'https://github.com/artob/foobar',
   },
   packages=find_packages(where='src'),
   package_dir={'': 'src'},

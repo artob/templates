@@ -4,7 +4,7 @@ version: 0.0.0
 description: >-
   TODO Package description goes here.
 author: Arto Bendiken <arto@bendiken.net>
-homepage: https://github.com/bendiken/foobar
+homepage: https://github.com/artob/foobar
 documentation:
 dependencies:
 dev_dependencies:

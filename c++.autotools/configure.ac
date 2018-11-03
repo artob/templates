@@ -18,7 +18,7 @@ m4_define([VERSION_STRING],
 dnl Define package information:
 AC_INIT([libfoobar], [VERSION_STRING],
   [arto@bendiken.net], [libfoobar],
-  [https://github.com/bendiken/libfoobar])
+  [https://github.com/artob/libfoobar])
 
 dnl Configure Autoconf:
 AC_CONFIG_HEADERS([src/config.h])
