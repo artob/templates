@@ -3,7 +3,6 @@ language: dart
 sudo: false
 dart:
   - stable
-  - dev
 dart_task:
   - test
   - dartfmt
