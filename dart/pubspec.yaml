@@ -4,9 +4,10 @@ version: 0.0.0
 description: >-
   TODO Package description goes here.
 author: Arto Bendiken <arto@bendiken.net>
-homepage: https://github.com/artob/foobar
+homepage: https://github.com/drydart/foobar
 documentation:
 dependencies:
+  meta: ^1.1.6
 dev_dependencies:
   test: '>=1.3.4 <2.0.0'
 dependency_overrides:
