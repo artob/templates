@@ -2,7 +2,7 @@
 name: foobar
 version: 0.0.0
 description: >-
-  TODO Package description goes here.
+  TODO for Dart (60-180 characters)
 author: Arto Bendiken <arto@bendiken.net>
 homepage: https://github.com/drydart/foobar
 documentation:
